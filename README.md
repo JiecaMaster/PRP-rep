@@ -2,6 +2,9 @@
  Codes of a PRP for detecting attack on network flow with LLM
 
 * csv_cut.py 用于选取相关label的流量数据
+* sort_by_size.py 将所有数据条目根据Average Packet Size的大小进行排序
+* get_sample.py 对已经排序的条目进行相对均匀的随机抽样，得到样例条目
+* remove_columns.py 删去不想展示的条目
 
 * 在构建输入数据时的注意事项：
   1. 不采用表格的方式构建输入数据，而是在每个数据之前都加上相应的字段名（待测试更高级模型是否使用表格输入时可以摆脱幻觉）
