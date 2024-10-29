@@ -19,9 +19,9 @@ def remove_columns(input_file, output_file, columns_to_remove):
 
 
 # 预设输入、输出文件路径和要删除的字段
-input_file = "BENIGN_sampled_output_1_10.csv"  # 输入文件路径
-output_file = "BENIGN_pure_sample_1_10.csv"  # 输出文件路径
-columns_to_remove = [#" Label",
+input_file = "hulk_test_merge_1_20.csv"  # 输入文件路径
+output_file = "hulk_test_pure_1_20.csv"  # 输出文件路径
+columns_to_remove = [" Label",
     "Flow ID"," Source IP"," Source Port"," Destination IP"," Destination Port"," Timestamp"]  # 要删除的字段列表
 
 remove_columns(input_file, output_file, columns_to_remove)
